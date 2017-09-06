@@ -2,7 +2,7 @@ require "json_matchers"
 require "json_matchers/payload"
 
 module JsonMatchers
-  class RSpec < SimpleDelegator
+  class RSpec < ::SimpleDelegator
     attr_reader :schema_name
 
     def initialize(schema_name, **options)
